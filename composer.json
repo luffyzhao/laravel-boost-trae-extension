@@ -1,0 +1,36 @@
+{
+    "name": "luffyzhao/laravel-boost-trae-extension",
+    "description": "A Laravel Composer package that provides Trae IDE integration for Laravel Boost. For boost 2.x\u001b",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Luffyzhao\\LaravelBoostTraeExtension\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "luffy",
+            "email": "luffyzhao@vip.126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4",
+        "laravel/boost": "^2.0",
+        "illuminate/support": "^12.28.1"
+    },
+    "require-dev": {
+        "laravel/pint": "1.20",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

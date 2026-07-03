@@ -1,0 +1,13 @@
+<?php
+namespace Appoly\LaravelBoostTrae;
+use Illuminate\Support\ServiceProvider;
+use Laravel\Boost\Boost;
+use Laravel\Boost\Install\Agents\Trae;
+
+class TraeServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        Boost::registerCodeEnvironment('trae', Trae::class);
+    }
+}
