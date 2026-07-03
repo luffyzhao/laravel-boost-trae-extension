@@ -8,6 +8,6 @@ class TraeServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        Boost::registerCodeEnvironment('trae', Trae::class);
+        Boost::registerAgent('trae', Trae::class);
     }
 }
