@@ -3,7 +3,7 @@ namespace Luffyzhao\LaravelBoostTraeExtension;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Boost\Boost;
-use Laravel\Boost\Install\Agents\Trae;
+use Luffyzhao\LaravelBoostTraeExtension\Install\Agents\Trae;
 
 class TraeServiceProvider extends ServiceProvider
 {
