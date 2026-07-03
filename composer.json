@@ -15,7 +15,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.4",
+        "php": ">=8.2",
         "laravel/boost": "^2.0",
         "illuminate/support": "^12.28.1"
     },
