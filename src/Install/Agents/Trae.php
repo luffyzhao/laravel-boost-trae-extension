@@ -9,6 +9,7 @@ use Laravel\Boost\Contracts\SupportsMcp;
 use Laravel\Boost\Contracts\SupportsSkills;
 use Laravel\Boost\Install\Enums\McpInstallationStrategy;
 use Laravel\Boost\Install\Enums\Platform;
+use Laravel\Boost\Install\Agents\Agent;
 
 class Trae extends Agent implements SupportsGuidelines, SupportsMcp, SupportsSkills
 {
@@ -38,7 +39,7 @@ class Trae extends Agent implements SupportsGuidelines, SupportsMcp, SupportsSki
     {
         return [
             'paths' => ['.trae'],
-            'files' => ['rules/TRAAE.md'],
+            'files' => ['rules/project_rules.md'],
         ];
     }
 
@@ -49,16 +50,16 @@ class Trae extends Agent implements SupportsGuidelines, SupportsMcp, SupportsSki
 
     public function mcpConfigPath(): string
     {
-        return config('boost.agents.trae.mcp_config_path', './trae/.mcp.json');
+        return config('boost.agents.trae.mcp_config_path', './.trae/.mcp.json');
     }
 
     public function guidelinesPath(): string
     {
-        return config('boost.agents.trae.guidelines_path', './trae/rules/TRAAE.md');
+        return config('boost.agents.trae.guidelines_path', './.trae/rules/TRAAE.md');
     }
 
     public function skillsPath(): string
     {
-        return config('boost.agents.trae.skills_path', '.trae/skills'); 
+        return config('boost.agents.trae.skills_path', '.trae/skills');
     }
 }
