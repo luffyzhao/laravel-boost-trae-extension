@@ -1,5 +1,6 @@
 <?php
-namespace Appoly\LaravelBoostTrae;
+namespace Luffyzhao\LaravelBoostTraeExtension;
+
 use Illuminate\Support\ServiceProvider;
 use Laravel\Boost\Boost;
 use Laravel\Boost\Install\Agents\Trae;

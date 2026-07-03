@@ -7,6 +7,16 @@
             "Luffyzhao\\LaravelBoostTraeExtension\\": "src/"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Luffyzhao\\LaravelBoostTraeExtension\\TraeServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "luffy",
